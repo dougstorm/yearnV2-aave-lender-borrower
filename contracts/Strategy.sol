@@ -2,7 +2,8 @@
 pragma solidity 0.6.12;
 pragma experimental ABIEncoderV2;
 
-import {BaseStrategy} from "@yearnvaults/contracts/BaseStrategy.sol";
+// import {BaseStrategy} from "@yearnvaults/contracts/BaseStrategy.sol";
+import {BaseStrategy} from "./BaseStrategy.sol";
 
 import "@openzeppelin/contracts/math/Math.sol";
 
@@ -59,7 +60,7 @@ contract Strategy is BaseStrategy {
     uint16 public warningLTVMultiplier = 8_000; // 80% of liquidation LTV
 
     // support
-    uint16 internal constant MAX_BPS = 10_000; // 100%
+    // uint16 internal constant MAX_BPS = 10_000; // 100%
     uint16 internal constant MAX_MULTIPLIER = 9_000; // 90%
 
     IAToken internal aToken;
